@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/mozillascience/software-citation-tools](https://badges.gitter.im/mozillascience/software-citation-tools.svg)](https://gitter.im/mozillascience/software-citation-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-The Software Citation Tools are a package of tools written in Javascript and made available through the npm Javascript package manager. The main part of the package will be a library which will create a citation when given a link to a Github repository. Further tools will be created on top of this library to make using this library easier and extend its usefulness.
+The Software Citation Tools are a package of tools written in Javascript and with the core library made available through the npm Javascript package manager. The main part of the package will be a library which will create a citation when given a link to a Github repository. Further tools will be created on top of this library to make using this library easier and extend its usefulness.
 
 ##About the Project
 Software Citation Tools is a project proposed and overseen by Mozilla Science Lab via Abigail Cabunoc Mayes and headed by a senior project team at The Rochester Institute of Technology's Software Engineering Department. The purpose of Software Citation Tools is to provide some tools that use the ideas shown in the [Software Citation Principles](https://www.force11.org/software-citation-principles) paper by FORCE11 to make software citation easier and more frequent in academia.
