@@ -1,0 +1,10 @@
+lang: "en-us"
+title: "Software Citation Tools"
+base-url: "/software-citation-tools"
+
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default"
