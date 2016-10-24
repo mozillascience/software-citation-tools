@@ -1,0 +1,22 @@
+{
+  "name": "citation-core",
+  "version": "1.0.0",
+  "description": "A Framework for generating a citation from several sources",
+  "main": "citationCore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozillascience/software-citation-tools.git"
+  },
+  "keywords": [
+    "citation"
+  ],
+  "author": "Eric Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mozillascience/software-citation-tools/issues"
+  },
+  "homepage": "https://github.com/mozillascience/software-citation-tools#readme"
+}
