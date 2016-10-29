@@ -61,7 +61,7 @@ module.exports = {
 			returnString += (authorName != null) ? authorName : '';
 
 			if(isSecondToLastIndex(index, array)) {
-				returnString += '& ';
+				returnString += ' & ';
 			}
 			else if(!isLastIndex(index, array)) {
 				returnString += ', ';
@@ -75,8 +75,13 @@ module.exports = {
 
 		// Title
 		if(sourceData.name != null) {
-			returnString += sourceData.name + '.';
+			returnString += ' "' + sourceData.name + '".';
 		} 
+
+		// Version
+		if(sourceData.version != null) {
+			returnString += ' Version: ' + sourceData.version + '.';
+		}
 
 		// URL
 		if(sourceData.url != null) {

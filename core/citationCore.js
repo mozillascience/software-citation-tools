@@ -9,22 +9,22 @@ let ApaFormat = require('./model/formats/apa');
  */
 module.exports = {
 	/**
-	 * @param {string} url - the url of the code source to generate citation from
+	 * @param {FormatOptions} formatOptions - The basic configuration object that is used to determine the format of the citation output string
 	 * @param {CitationCore~fetch} callback - Callback on completion of citation generation. Args are string and array of errors or warning  
 	 */
-	generate : (url, callback) => {
+	generate : (formatOptions, callback) => {
 		// Strip http:// and www. if they exists
-		let sanitizedUrl = url.replace(/^http(s)?\:\/\//, '').replace(/^www\./, '');
+		let sanitizedUrl = formatOptions.url.replace(/^http(s)?\:\/\//, '').replace(/^www\./, '');
 		let urlHandler = UrlResolver.getHandler(sanitizedUrl);
 		if(urlHandler != null) {
 			urlHandler.fetch(sanitizedUrl, (sourceData, messages) => {
-				let citation = ApaFormat.format(sourceData);
+				let citation = formatOptions.style.format(sourceData);
 				callback(citation, [])
 			})
 		}
 		else {
 			// TODO: Populate array with error
-			callback(null, [])
+			callback(null, [new Error('"' + formatOptions.url + '" is an unsupported source')]);
 		}
 	}
 }

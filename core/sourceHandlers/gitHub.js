@@ -102,6 +102,10 @@ module.exports = {
 							cb(error, users);
 						}
 					});
+				},
+				// Fetch Version data
+				(cb) => {
+					sendApiRequest('repos/' + repoName + '/releases', cb);
 				}
 			], (error, results) => {
 				if(error == null) {
@@ -116,6 +120,12 @@ module.exports = {
 
 					// Author Info
 					sourceData.authors = results[1];
+
+					// Version Data
+					let versions = results[2];
+					if(versions.length > 0) {
+						sourceData.version = versions[0].name || versions[1].tag_name;
+					}
 
 					callback(sourceData, []);
 				}

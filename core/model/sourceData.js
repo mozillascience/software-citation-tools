@@ -13,12 +13,6 @@
 */
 
 /**
- * @typeDef {Object} Citation
- * @prop {Array<Message>} messages - Any warnings or errors while creating the citation.
- * @prop {string} value - The human readable citation
- */
-
-/**
  * @class
  * @prop {string} name - Name of the project
  * @prop {Array<Author>} authors - List of author objects
@@ -32,7 +26,7 @@
 class SourceData {
 	constructor() {
 		this.name = '';
-		this.version = '';
+		this.version = null;
 		this.releaseDate = null;
 		this.url = '';
 		this.licence = '';
