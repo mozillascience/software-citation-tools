@@ -37,6 +37,19 @@ module.exports = {
 }
 
 /**
+ * Option flags.  The string representation of a flag maps to the function that parses that flag.
+ * A parse function must have the parameters:
+ * - the index that the flag occured.
+ * - the array of the args
+ * - the format option object that it must modify based on the value of the flag.
+ * The function must return the index after the last argument it has consumed.  This index does not need to be in bounds, but it should
+ * me greater than the index passed in.
+ */
+let optionFlags = {
+	'-f' : parseFormat
+}
+
+/**
  * Determines the Formatter object from a string.
  * @param {string} formatString - The string representation of a format. For example c or 'chicago' will return the Chicago Formatter.
  * @return {Formatter} - The formatter for the given description.
@@ -51,7 +64,7 @@ function getFormat(formatString) {
 		return require('../core/model/formats/chicago');
 	}
 
-	throw new Error(formatString + ' is an unsuported citation format. Try apa or chicago');
+	throw new Error(formatString + ' is an unsuported citation format. Try "apa" or "chicago"');
 }
 
 /**
@@ -66,17 +79,4 @@ function parseFormat(index, args, formatOptions) {
 	}
 	
 	throw new Error('No format provided');
-}
-
-/**
- * Option flags.  The string representation of a flag maps to the function that parses that flag.
- * A parse function must have the parameters:
- * - the index that the flag occured.
- * - the array of the args
- * - the format option object that it must modify based on the value of the flag.
- * The function must return the index after the last argument it has consumed.  This index does not need to be in bounds, but it should
- * me greater than the index passed in.
- */
-let optionFlags = {
-	'-f' : parseFormat
 }
