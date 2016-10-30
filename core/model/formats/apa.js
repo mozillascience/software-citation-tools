@@ -1,4 +1,5 @@
 'use strict';
+require('../../../utils/array');
 
 /**
  * Generates the string that represents the author's name in APA
@@ -22,26 +23,6 @@ function getAuthorName(author) {
 }
 
 /**
- * Determines if the index is the index of the last element in the array
- * @param {number} index - The index to check
- * @param {Array} array - The array to check
- * @return {boolean} true if the index is the last element
- */
-function isLastIndex(index, array) {
-	return index == array.length - 1;
-}
-
-/**
- * Determines if the index is the second to last element in the array
- * @param {number} index - The index to check
- * @param {Array} array - The array to check
- * @return {boolean} true if the index is the second to last element
- */
-function isSecondToLastIndex(index, array) {
-	return index == array.length - 2;
-}
-
-/**
  * @module APA Formatter
  * Module for formatting source data into a APA citation string
  */
@@ -60,10 +41,10 @@ module.exports = {
 			let authorName = getAuthorName(author);
 			returnString += (authorName != null) ? authorName : '';
 
-			if(isSecondToLastIndex(index, array)) {
+			if(array.isNFromLastIndex(index, 1)) {
 				returnString += ' & ';
 			}
-			else if(!isLastIndex(index, array)) {
+			else if(!array.isLastIndex(index)) {
 				returnString += ', ';
 			}
 		});

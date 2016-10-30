@@ -23,7 +23,6 @@ module.exports = {
 			})
 		}
 		else {
-			// TODO: Populate array with error
 			callback(null, [new Error('"' + formatOptions.url + '" is an unsupported source')]);
 		}
 	}

@@ -1,3 +1,5 @@
+require('../utils/array')
+
 let FormatOptions = require('../core/model/formatOptions');
 
 /**
@@ -35,21 +37,6 @@ module.exports = {
 }
 
 /**
- * Gets the next value in the array.
- * @param {number} index - The current index
- * @param {Array} array - The array to get the next value.
- * @return {Object} - The next value in the array or null if it does not exist.
- */
-function getNextValue(index, array) {
-	let nextIndex = index + 1;
-	if(nextIndex < array.length) {
-		return array[nextIndex];
-	}
-
-	return null;
-}
-
-/**
  * Determines the Formatter object from a string.
  * @param {string} formatString - The string representation of a format. For example c or 'chicago' will return the Chicago Formatter.
  * @return {Formatter} - The formatter for the given description.
@@ -72,7 +59,7 @@ function getFormat(formatString) {
  * @param The index
  */
 function parseFormat(index, args, formatOptions) {
-	let nextValue = getNextValue(index, args);
+	let nextValue = args.getNextValue(index);
 	if(nextValue != null) {
 		formatOptions.style = getFormat(nextValue);
 		return index + 2;

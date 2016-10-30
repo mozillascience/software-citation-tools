@@ -1,3 +1,6 @@
+'use strict';
+require('../../../utils/array');
+
 function authorName(author, index) {
 	if(author.firstName != null && author.lastName != null) {
 		return (index == 0) ? (author.lastName + ', ' + author.firstName) : author.firstName + ' ' + author.lastName;
@@ -12,10 +15,11 @@ module.exports = {
 		sourceData.authors.forEach((author, index, array) => {
 			returnString += authorName(author, index);
 
-			if(index == array.length - 2) {
+			//Second to last
+			if(array.isNFromLastIndex(index, 1)) {
 				returnString += ' and ';
 			}
-			else if(index == array.length - 1) {
+			else if(array.isLastIndex(index)) {
 				returnString += '.';
 			}
 			else {
@@ -37,7 +41,7 @@ module.exports = {
 			returnString += '(';
 			pubInfo.forEach((obj, index, array) => {
 				returnString += obj;
-				if(index != (array.length - 1)) {
+				if(!array.isLastIndex(index)) {
 					returnString += ', ';
 				}
 			});
