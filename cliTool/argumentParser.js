@@ -66,6 +66,9 @@ function getFormat(formatString) {
     else if(format == 'bibtexmisc' || format == 'bm') {
         return require('../core/model/formats/bibtexmisc');
     }
+    else if(format == 'bibtexsoftware' || format == 'bs'){
+        return require('../core/model/formats/biblatexsoftware');
+    }
 	throw new Error(formatString + ' is an unsuported citation format. Try "apa" or "chicago"');
 }
 
