@@ -10,4 +10,4 @@ Software Citation Tools is a project proposed and overseen by Mozilla Science La
 Even though the team heading the project is doing this as a senior project, anyone is free to contribute! The RIT Software Engineering department has given approval for anyone to help out in any way without affecting the team's grade. Please feel free to contribute in any way you want!
 
 ##Contributing
-Right now we're trying to build a set of requirements and features by getting responses to some [questions](https://github.com/mozillascience/software-citation-tools/issues?q=is%3Aissue+is%3Aopen+label%3ADiscussion) we made.
+We encourage you to contribute to this project in any way you can! An important goal of this project is to foster a community around these tools. If you'd like to be a part of that community, read our [contributing guide](https://github.com/mozillascience/software-citation-tools/blob/master/CONTRIBUTING.md) for more information.
