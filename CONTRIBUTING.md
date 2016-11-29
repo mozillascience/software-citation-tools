@@ -14,7 +14,7 @@ This project uses GitHub Issues to track work tickets. If you would like to repo
 
 We welcome code contributions to this project! If you would like to contribute by developing for this project, please select a work ticket that is in the "Ready" state from the [Issues page][issues].
 
-When you have successfully implemented the feature described by the work ticket, please [squash]squashGitDoc the relevant commits into one feature commit, include the issue number in the commit message, and issue a pull request to the development branch of the project. The team will review your pull request, and may ask clarifying questions or request changes- please actively participate in discussion. Once the team has approved your pull request, your contributions will be merged!
+When you have successfully implemented the feature described by the work ticket, please [squash][squashGitDoc] the relevant commits into one feature commit, include the issue number in the commit message, and issue a pull request to the development branch of the project. The team will review your pull request, and may ask clarifying questions or request changes- please actively participate in discussion. Once the team has approved your pull request, your contributions will be merged!
 
 
 [issues]: https://github.com/mozillascience/software-citation-tools/issues
