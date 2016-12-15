@@ -1,8 +1,9 @@
 'use strict';
 
 let GitHubSourceHandler = require('./sourceHandlers/gitHub');
+let BitBucketSourceHandler = require('./sourceHandlers/bitBucket')
 
-let handlers = [GitHubSourceHandler];
+let handlers = [GitHubSourceHandler, BitBucketSourceHandler];
 
 module.exports = {
 	/**
