@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/mozillascience/software-citation-tools/issues"
   },
-  "homepage": "https://github.com/mozillascience/software-citation-tools#readme"
+  "homepage": "https://github.com/mozillascience/software-citation-tools#readme",
+  "dependencies": {
+    "async": "^2.1.4",
+    "request": "^2.79.0"
+  }
 }
