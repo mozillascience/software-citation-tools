@@ -25,7 +25,14 @@ function sendApiRequest(path, cb) {
 	}
 
 	request(options, (error, response, body) => {
-		cb(error, JSON.parse(body));
+		let parsedBody = (body != null) ? JSON.parse(body) : null;
+		if(error == null && response.statusCode != 200) {
+			let errorMessage = 'Received a ' + response.statusCode + ' when making a request to ' + options.url;
+			cb(new Error(errorMessage, parsedBody));
+		}
+		else {
+			cb(error, parsedBody);
+		}
 	});
 }
 
@@ -129,7 +136,9 @@ module.exports = {
 
 					callback(sourceData, []);
 				}
-				// TODO: Handle error case
+				else {
+					callback(null, [error]);
+				}
 			});
 		}
 
