@@ -1,6 +1,6 @@
-require('../utils/array')
+require('./utils/array')
 
-let FormatOptions = require('../core/model/formatOptions');
+let CitationCore = require('citation-core')
 
 /**
  * @module
@@ -16,7 +16,7 @@ module.exports = {
 	 */
 	parse : (args) => {
 		if(args.length >= 1) {
-			let formatOptions = new FormatOptions();
+			let formatOptions = new CitationCore.FormatOptions();
 			formatOptions.url = args[0];
 			for(let i = 1; i < args.length; i++) {
 				let optionHandler = optionFlags[args[i]];
@@ -58,16 +58,16 @@ let optionFlags = {
 function getFormat(formatString) {
 	let format = formatString.toLowerCase();
 	if(format == 'apa' || format == 'a') {
-		return require('../core/model/formats/apa');
+		return CitationCore.styles.apa;
 	}
 	else if(format == 'chicago' || format == 'c') {
-		return require('../core/model/formats/chicago');
+		return CitationCore.styles.chicago;
 	}
     else if(format == 'bibtexmisc' || format == 'bm') {
-        return require('../core/model/formats/bibtexmisc');
+        return CitationCore.styles.bibtexMisc;
     }
     else if(format == 'bibtexsoftware' || format == 'bs'){
-        return require('../core/model/formats/biblatexsoftware');
+        return CitationCore.styles.biblatexSoftware;
     }
 	throw new Error(formatString + ' is an unsuported citation format. Try "apa" or "chicago"');
 }
