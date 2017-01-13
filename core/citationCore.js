@@ -18,8 +18,11 @@ module.exports = {
 		let urlHandler = UrlResolver.getHandler(sanitizedUrl);
 		if(urlHandler != null) {
 			urlHandler.fetch(sanitizedUrl, (sourceData, messages) => {
-				let citation = formatOptions.style.format(sourceData);
-				callback(citation, [])
+				if(sourceData != null) {
+					var citation = formatOptions.style.format(sourceData);
+				}
+
+				callback(citation, messages);
 			})
 		}
 		else {
