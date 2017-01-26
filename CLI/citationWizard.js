@@ -1,6 +1,6 @@
 'use strict';
 
-let CitationCore = require('../core/citationCore');
+let CitationCore = require('citation-core');
 let ArgumentParser = require('./argumentParser');
 
 try {
