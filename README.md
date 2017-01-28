@@ -9,5 +9,11 @@ Software Citation Tools is a project proposed and overseen by Mozilla Science La
 
 Even though the team heading the project is doing this as a senior project, anyone is free to contribute! The RIT Software Engineering department has given approval for anyone to help out in any way without affecting the team's grade. Please feel free to contribute in any way you want!
 
+##The Tools
+Software Citation Tools includes several tools which are maintained in separate repositories. They can be found at the following links:
+- [Citation Core](https://github.com/mozillascience/CitationCore): The core module of Software Citation Tools, which returns a citation string given a code source URL
+- Command Line Interface: A command line interface to the Citation Core's functionality. Currently stored in this repository.
+- [Citation Plugin](https://github.com/mozillascience/citation-plugin): A browser plugin for Mozilla Firefox designed to quickly use the Citation Core's functionality when a user is on a code source webpage.
+
 ##Contributing
 We encourage you to contribute to this project in any way you can! An important goal of this project is to foster a community around these tools. If you'd like to be a part of that community, read our [contributing guide](https://github.com/mozillascience/software-citation-tools/blob/master/CONTRIBUTING.md) for more information.
