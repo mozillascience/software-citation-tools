@@ -1,6 +1,6 @@
 # Contributing
 
-We encourage you to contriubte to this project in any way you can! An important goal of this project is to foster a community around these tools. If you'd like to be a part of that community, consider contributing in one of these ways:
+We encourage you to contribute to this project in any way you can! An important goal of this project is to foster a community around these tools. If you'd like to be a part of that community, consider contributing in one of these ways:
 
 ## Discussion
 
