@@ -13,13 +13,13 @@
   "keywords": [
     "citation"
   ],
-  "author": "Eric Lee",
+  "contributors": ["Eric Lee <nokeeo@me.com>", "Robert Lowe <rdl8212@rit.edu>", "Colin O'Neill <colin@faokryn.com>", "Samuel Mosher <sam1360@rit.edu>", "mozillafoundation"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mozillascience/software-citation-tools/issues"
   },
   "homepage": "https://github.com/mozillascience/software-citation-tools#readme",
   "dependencies": {
-    "citation-core": "0.0.1"
+    "citation-core": "^1.x"
   }
 }
