@@ -14,6 +14,7 @@ Software Citation Tools includes several tools which are maintained in separate 
 - [Citation Core](https://github.com/mozillascience/CitationCore): The core module of Software Citation Tools, which returns a citation string given a code source URL
 - Command Line Interface: A command line interface to the Citation Core's functionality. Currently stored in this repository.
 - [Citation Plugin](https://github.com/mozillascience/citation-plugin): A browser plugin for Mozilla Firefox designed to quickly use the Citation Core's functionality when a user is on a code source webpage.
+- [Citation Web Server](https://github.com/mozillascience/citation-web-server): A web app designed to allow user-friendly citing of software using the Citation Core functionality.
 
 ##Contributing
 We encourage you to contribute to this project in any way you can! An important goal of this project is to foster a community around these tools. If you'd like to be a part of that community, read our [contributing guide](https://github.com/mozillascience/software-citation-tools/blob/master/CONTRIBUTING.md) for more information.
