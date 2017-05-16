@@ -1,0 +1,34 @@
+main {
+    padding-top: 100px;
+}
+
+nav.navbar {
+    background: #28A75F;
+    background-image: linear-gradient(to bottom, #28A75F 0, #0F9148 100%);
+}
+
+nav.navbar a {
+    color: #DDDDDD;
+    text-shadow: none;
+}
+
+nav .nav > li > a:hover {
+    background-color: #45B777;
+}
+
+.btn-primary {
+    background: #28A75F;
+    background-image: linear-gradient(to bottom, #28A75F 0, #0F9148 100%);
+}
+
+.btn-primary:hover {
+    background: #45B777;
+}
+
+.btn-primary:active:hover {
+    background: #0F9148;
+}
+
+p {
+    text-align: justify;
+}

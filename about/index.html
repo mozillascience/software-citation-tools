@@ -1,18 +1,72 @@
----
-title: "About"
----
-<h1 class="text-center">About the Tools</h1>
-<p class="text-justify">
-    Software has become increasingly important in modern research, yet it's rarely acknowledged or cited.  By building tools that make it easier to cite software, we can give more credit to research code.  The Software Citation Tools suite aims to fulfill this need by providing researchers and other academics with tools to help generate citations for software.  It will include a module to allowing researchers to input a software repositiry and generate a citation for that software, as well as other tools utilizing the module.
-</p>
-<p class="text-justify">
-    The Software Citation Tools are being developed as open source software, following open source best practices.  See <a href="../contribute">Contributing</a> for more details.
-</p>
-<h1 class="text-center">About the Team</h1>
-<p class="text-justify">
-    The main project team consists of four Software Engineering students from <a href="http://se.rit.edu">Rochester Institute of Technology</a>.
-</p>
-<h3>Eric Lee</h3>
-<h3>Rob Lowe</h3>
-<h3>Sam Mosher</h3>
-<h3>Colin O'Neill</h3>
+
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About | Software Citation Tools</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+
+<body>
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Software Citation Tools</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="..">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="../tools">Tools</a></li>
+                <li><a href="../docs">Documentation</a></li>
+                <li><a href="../contribute">Get Involved</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+    <main class="container">
+        <h1 class="text-center">About Software Citation Tools</h1>
+        <h3>Background</h3>
+        <p>
+            Software has become increasingly important in modern research, yet it's rarely acknowledged or cited. Often, it is cited as data, a paper related to the software is cited instead, or it is not cited at all. All of these methods fail to provide proper credit to the devolpers of software used in research, and fail to provide proper specificity for researchers looking to reproduce the results of research.
+        </p>
+        <p>
+            By building tools that make it easier to cite software, we can give more credit to research code. The Software Citation Tools suite aims to fulfill this need by providing researchers and other academics with tools to help generate citations for software. The suite includes a command line interface, a browser plugin, and a web application, all of which allow researchers to input a software repositiry URL and generate a citation for that software. All of these tools are built around a central, easily-extensible core library that handles the retrieval of data from code sources and the creation of citations. See <a href="../tools">Tools</a> for more details.
+        </p>
+        <p>
+            In order to provide robust citations, the <a href="https://www.force11.org/software-citation-principles">Force11 Working Group's Software Citation Principles</a> were used as a guideline for the generation of software citations.
+        </p>
+
+        <h3>The Team</h3>
+        <p>
+            The main project team consists of four Software Engineering students from <a href="http://www.rit.edu/">Rochester Institute of Technology</a>: <a href="https://github.com/nokeeo">Eric Lee</a>, <a href="https://github.com/ourobor">Rob Lowe</a>, <a href="https://github.com/sam1360">Sam Mosher</a>, and <a href="https://github.com/faokryn">Colin O'Neill</a>. The team is advised by a faculty coach, <a href="https://www.rit.edu/president/profiles/boyd_donald.html">Dr. Donald Boyd</a>. The team is sponsored by the <a href="https://www.mozilla.org/en-US/foundation/"">Mozilla Foundation</a>, with guidance provided by <a href="http://acabunoc.github.io/">Abigail Cubunoc Mayes</a>.
+        </p>
+
+        <h3>Getting Involved</h3>
+        <p>
+            Software Citation Tools is being developed as an open source project. As such, participation and contribution is encouraged. Please see <a href="../contribute">Get Involved</a> for more details.
+        </p>
+    </main>
+
+    <!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

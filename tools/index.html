@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tools | Software Citation Tools</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+
+<body>
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Software Citation Tools</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="..">Home</a></li>
+                <li><a href="../about">About</a></li>
+                <li><a href="">Tools</a></li>
+                <li><a href="../docs">Documentation</a></li>
+                <li><a href="../contribute">Get Involved</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+    <main class="container">
+        <h1 class="text-center">The Tools</h1>
+        <h3>Citation Core</h3>
+        <p>
+            Citation Core is the core library upon which the other tools are built. It takes in a URL for a code source, identifies if that code source is supported and, if so, what kind of code source it is, fetches the requisite data for the citation from the code source, and generates the citation in the default format or, optionally, in a specified format.
+        </p>
+        <p>
+            Citation Core is built to be easily extensible, so that additional code sources and citation formats can be easily added.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/mozillascience/CitationCore">GitHub</a>
+
+        <h3>Command Line Interface</h3>
+        <p>
+            The command line interface is a simple interface to Citation Core. It allows a user to use Citation Core to generate citations in a Unix-like terminal environment.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/mozillascience/software-citation-tools">GitHub</a>
+
+        <h3>Citation Web App</h3>
+        <p>
+            The Citation Web App is a web application meant to provide a user-friendly interface to the Citation Core functionality. It allows users to enter a URL and specifiy an output format, and generate a citation. An instance of Citation Web Server can be run by the user to utilize the application, or a user can simply navigate to the active instance, currently hosted on Heroku.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/mozillascience/citation-web-server">GitHub</a>
+        <a class="btn btn-primary" href="https://software-citation.herokuapp.com">Live App</a>
+
+        <h3>Citation Plugin</h3>
+        <p>
+            The Citation Plugin is a browser plugin for Mozilla Firefox, meant to provide easy generation of citations in the browser. A user can either enter a code source URL, similarly to the web application, or they can navigate to a code source page and simply click "Cite" in the plugin's window.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/mozillascience/citation-plugin">GitHub</a>
+    </main>
+
+    <!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
